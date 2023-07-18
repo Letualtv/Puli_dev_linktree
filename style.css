@@ -1,0 +1,50 @@
+
+
+body {
+    margin: 6em 2em;
+    background-position:center;
+    background-size:cover;
+
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  .tree {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+  }
+  .tree .username {
+font-size: large;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .tree .links a {
+    margin: 0.75em auto;
+  }
+  .tree .footer {
+    margin: 2rem;
+  }
+  .tree .profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  a.btn {
+    background-color: #fff;
+    font-weight: 600;
+  }
+  .header {
+    padding-top: 1.5em;
+  }
+  .footer {
+ text-align: center;
+ font-size: small;
+ text-decoration: dotted;
+ padding: 1.5em;
+  }
+  
+  
