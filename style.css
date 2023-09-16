@@ -2,25 +2,32 @@
 
 body {
     margin: 6em 2em;
+    width: 100%;
     background-position:center;
-    background-size:cover;
+    background-size: cover;
+    background: #39393A;  /* Para navegadores antiguos */
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1076%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(238%2c 99%2c 82%2c 1)'%3e%3c/rect%3e%3cpath d='M1984 1080L0 1080 L0 432.48Q-21.58 314.9%2c 96 293.33Q242.19 279.51%2c 256 425.7Q327.29 400.99%2c 352 472.28Q384.37 408.64%2c 448 441.01Q493.46 326.47%2c 608 371.92Q709.84 313.76%2c 768 415.6Q807.87 359.47%2c 864 399.34Q1003.31 378.65%2c 1024 517.96Q1026.77 424.73%2c 1120 427.49Q1106.99 318.48%2c 1216 305.47Q1258.08 251.55%2c 1312 293.63Q1389.49 275.12%2c 1408 352.61Q1498.27 282.88%2c 1568 373.16Q1618.18 263.34%2c 1728 313.52Q1799.98 225.5%2c 1888 297.48Q1959.9 273.38%2c 1984 345.28z' fill='rgba(89%2c 205%2c 144%2c 1)'%3e%3c/path%3e%3cpath d='M2048 1080L0 1080 L0 689.67Q80.58 674.25%2c 96 754.82Q118.16 616.98%2c 256 639.14Q312.86 536%2c 416 592.85Q418.01 498.87%2c 512 500.88Q670.81 563.69%2c 608 722.5Q594.83 613.33%2c 704 600.16Q766.97 503.13%2c 864 566.09Q938.25 544.35%2c 960 618.6Q1045.37 607.97%2c 1056 693.34Q1056.26 533.6%2c 1216 533.86Q1273.96 431.82%2c 1376 489.78Q1485.55 439.33%2c 1536 548.87Q1618.83 535.7%2c 1632 618.53Q1735.87 562.4%2c 1792 666.27Q1847.11 625.38%2c 1888 680.48Q1893.43 525.91%2c 2048 531.34z' fill='rgba(63%2c 167%2c 214%2c 1)'%3e%3c/path%3e%3cpath d='M2048 1080L0 1080 L0 815.6Q62.65 718.25%2c 160 780.91Q250.54 711.45%2c 320 801.99Q349.7 735.69%2c 416 765.4Q473.51 662.91%2c 576 720.43Q639.17 623.6%2c 736 686.76Q863.78 654.54%2c 896 782.32Q1009.96 736.28%2c 1056 850.24Q1059.32 757.56%2c 1152 760.87Q1176.85 689.71%2c 1248 714.56Q1311.14 681.7%2c 1344 744.85Q1408.82 713.67%2c 1440 778.5Q1529.87 772.37%2c 1536 862.24Q1561.94 792.18%2c 1632 818.12Q1671.94 698.07%2c 1792 738.01Q1818.53 668.53%2c 1888 695.06Q1976.49 623.55%2c 2048 712.04z' fill='rgba(250%2c 192%2c 94%2c 1)'%3e%3c/path%3e%3cpath d='M2016 1080L0 1080 L0 925.27Q77.31 842.58%2c 160 919.88Q224.24 824.12%2c 320 888.36Q375.63 847.99%2c 416 903.61Q575.18 902.79%2c 576 1061.96Q599.21 989.17%2c 672 1012.39Q701.16 945.55%2c 768 974.7Q835.75 882.45%2c 928 950.19Q965.43 891.62%2c 1024 929.05Q1085.15 830.2%2c 1184 891.35Q1313.4 860.75%2c 1344 990.16Q1457.85 944.01%2c 1504 1057.86Q1519.17 913.03%2c 1664 928.2Q1720.88 889.09%2c 1760 945.97Q1872.93 962.9%2c 1856 1075.84Q1847.34 907.18%2c 2016 898.52z' fill='rgba(247%2c 157%2c 132%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1076'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");  }
 
-    background: #b92b27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
+  svg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
   }
+
   .tree {
     margin: 0 auto;
     text-align: center;
-    width: 80%;
+    width: 70%;
     max-width: 800px;
   }
   .tree .username {
-font-size: large;
-    font-weight: 600;
-    margin-top: 1em;
-    margin-bottom: 2em;
+font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.2em;
+    margin-bottom: 1.4em;
   }
   .tree .links a {
     margin: 0.75em auto;
@@ -36,6 +43,7 @@ font-size: large;
   a.btn {
     background-color: #fff;
     font-weight: 600;
+    border: solid 2px;
   }
   .header {
     padding-top: 1.5em;
@@ -43,10 +51,8 @@ font-size: large;
   .footer {
  text-align: center;
  font-size: small;
- padding-bottom: 1em;
+ font-weight: 600;
   }
-  .footer p {
-    padding-top: 1em;
-  }
+
   
   
